@@ -1,0 +1,22 @@
+@import "../var";
+
+@mixin hover($background, $type) {
+  background: darken(map-get($background, $type), 10%);
+}
+
+.btn-radius {
+  border-radius: 3rem;
+  padding: 0.7rem;
+}
+
+.btn-type-submit {
+  background: map-get($signature-color, main);
+  font-weight: bold;
+
+  @extend .btn-radius;
+  cursor: pointer;
+
+  &:hover {
+    @include hover($signature-color, main);
+  }
+}

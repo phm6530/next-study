@@ -1,0 +1,29 @@
+.bodyAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainGrid {
+  background: red;
+  max-width: 1500px;
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.rightWrapper {
+  background: rgb(170, 78, 50);
+  display: grid;
+  grid-template-columns: minmax(600px, 2fr) minmax(300px, 1fr);
+  height: 100dvh;
+}
+
+.contentsArea {
+  background: rgb(240, 116, 14);
+}
+.rightSection {
+  background: red;
+  display: flex;
+  flex-direction: column;
+}

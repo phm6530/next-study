@@ -1,0 +1,44 @@
+@import "../../../styles/common/btn.scss";
+
+.SideWrapper {
+  background: rgb(46, 46, 46);
+  height: 100dvh;
+  grid-row: 1/ -1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  flex-shrink: 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      padding: 10px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  nav {
+    margin: 2rem 0;
+  }
+}
+
+.active {
+  color: red;
+}
+
+.btn {
+  @extend .btn-type-submit;
+  width: 100%;
+}
+
+.logout {
+  @extend .btn-radius;
+  width: 100%;
+  margin-top: auto;
+}

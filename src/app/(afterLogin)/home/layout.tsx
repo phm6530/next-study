@@ -3,5 +3,5 @@ export default function HomeLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>zz {children}</>;
+  return <>Home Layout {children}</>;
 }
