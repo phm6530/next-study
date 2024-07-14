@@ -13,6 +13,11 @@
   }
 }
 
+.fixedHeader {
+  position: sticky;
+  top: 0;
+}
+
 .active {
   background: red;
 }
