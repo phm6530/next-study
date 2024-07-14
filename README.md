@@ -1,6 +1,6 @@
 # infren Twitter 클론코딩
 
-기존 twiiter를 제 방식대로 수정하여 만든 Next.js twitter 입니다.
+기존 twiiter를 제 방식대로 수정하여 만든 Next[tsx] - twitter 입니다.
 
 Front : Next - 진행중
 Backend : Next - 예정

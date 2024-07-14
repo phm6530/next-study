@@ -36,6 +36,11 @@
 .btn {
   @extend .btn-type-submit;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  svg {
+    width: 20px;
+  }
 }
 
 .logout {

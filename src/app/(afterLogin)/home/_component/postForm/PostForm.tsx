@@ -9,7 +9,6 @@ import {
   useState,
 } from "react";
 import classes from "./postForm.module.scss";
-import Image from "next/image";
 
 export default function PostForm() {
   const [txtValue, setTxtValue] = useState<string>("");
@@ -71,7 +70,9 @@ export default function PostForm() {
           onChange={previewHandler}
         />
         <button onClick={imgClickTrigger}>img</button>
-        <button disabled>게시하기</button>
+        <button disabled className={classes.submitPost}>
+          게시하기
+        </button>
       </form>
     </>
   );

@@ -1,3 +1,5 @@
+@import "../../../../styles//common//btn.scss";
+
 .postFormTextarea {
   width: 100%;
   resize: none;
@@ -8,4 +10,8 @@
   height: 300px;
   background: yellow;
   position: relative;
+}
+
+.submitPost {
+  @extend .btn-type-submit;
 }

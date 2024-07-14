@@ -6,12 +6,15 @@ import TrendSection from "@/app/(afterLogin)/_component/TrendSection/TrendSectio
 
 export default function AfterLoginLayout({
   children,
+  modal,
 }: {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }) {
   return (
     <html>
       <body className={classes.bodyAlign}>
+        {modal}
         <div className={classes.mainGrid}>
           {/* sider bar */}
           <SideBar />

@@ -7,6 +7,7 @@
 .btn-radius {
   border-radius: 3rem;
   padding: 0.7rem;
+  cursor: pointer;
 }
 
 .btn-type-submit {
@@ -14,8 +15,6 @@
   font-weight: bold;
 
   @extend .btn-radius;
-  cursor: pointer;
-
   &:hover {
     @include hover($signature-color, main);
   }

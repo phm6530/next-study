@@ -1,0 +1,39 @@
+@use "../../../../styles/var" as *;
+
+.postItme_List {
+  display: flex;
+  flex-direction: column;
+}
+
+.postItemGrid {
+  display: grid;
+  grid-template-columns: minmax(50px, auto) 1fr;
+  grid-template-rows: repeat(6, auto);
+  padding: 10px;
+  align-items: start;
+  border-bottom: 1px solid map-get($border-color, boxBorder);
+
+  &:hover {
+    background: red;
+  }
+}
+.imgArea {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.userImg {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  grid-row: 1 / -1;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.userId {
+  & span {
+    opacity: 0.7;
+  }
+}

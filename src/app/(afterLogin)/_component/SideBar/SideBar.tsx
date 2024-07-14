@@ -1,5 +1,6 @@
 import SideLink from "@/app/(afterLogin)/_component/SideBar/SideLink";
 import classes from "./sidebar.module.scss";
+import Link from "next/link";
 
 export default function SideBar() {
   const links = [
@@ -23,7 +24,10 @@ export default function SideBar() {
           })}
         </ul>
       </nav>
-      <button className={classes.btn}>게시하기</button>
+      <Link href="/compose/tweet" className={classes.btn}>
+        게시하기
+      </Link>
+
       <button className={classes.logout}>로그아웃</button>
     </div>
   );
