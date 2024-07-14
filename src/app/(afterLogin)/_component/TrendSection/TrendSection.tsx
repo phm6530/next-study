@@ -3,15 +3,30 @@ import classes from "./TrendSection.module.scss";
 
 export default function TrendSection() {
   return (
-    <>
-      <h3>Trend Section</h3>
+    <div className={classes.TrendWrapper}>
+      <h1>Trend Section</h1>
       <div className={classes.ListWrapper}>
         <TrendItem />
         <TrendItem />
         <TrendItem />
         <TrendItem />
         <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
+        <TrendItem />
       </div>
-    </>
+    </div>
   );
 }

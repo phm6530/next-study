@@ -1,3 +1,3 @@
-export default function searchPage() {
-  return <>검색페이지</>;
+export default function page() {
+  return <>page</>;
 }

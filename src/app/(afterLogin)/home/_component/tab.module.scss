@@ -1,0 +1,18 @@
+.tab {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  div {
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    &:hover {
+      background: darken(red, 20%);
+    }
+  }
+}
+
+.active {
+  background: red;
+}

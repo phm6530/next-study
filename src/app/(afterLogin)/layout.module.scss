@@ -8,8 +8,6 @@
   background: red;
   max-width: 1500px;
   width: calc(100% - 20px);
-  display: grid;
-  grid-template-columns: 300px 1fr;
 }
 
 .rightWrapper {
@@ -17,6 +15,7 @@
   display: grid;
   grid-template-columns: minmax(600px, 2fr) minmax(300px, 1fr);
   height: 100dvh;
+  margin-left: 300px;
 }
 
 .contentsArea {
@@ -24,6 +23,8 @@
 }
 .rightSection {
   background: red;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
