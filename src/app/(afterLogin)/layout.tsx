@@ -1,8 +1,7 @@
 import SideBar from "@/app/(afterLogin)/_component/SideBar/SideBar";
 import "@/app/styles/globals.scss";
 import classes from "./layout.module.scss";
-import SearchInput from "@/app/(afterLogin)/_component/Search/SearchInput";
-import TrendSection from "@/app/(afterLogin)/_component/TrendSection/TrendSection";
+import RightContents from "@/app/(afterLogin)/_component/RightContents";
 
 export default function AfterLoginLayout({
   children,
@@ -21,9 +20,7 @@ export default function AfterLoginLayout({
           <div className={classes.rightWrapper}>
             <div className={classes.contentsArea}>{children}</div>
             <div className={classes.rightSection}>
-              {/* 검색창 */}
-              <SearchInput />
-              <TrendSection />
+              <RightContents />
             </div>
           </div>
         </div>

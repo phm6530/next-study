@@ -1,0 +1,11 @@
+.FixedHeader {
+  // background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.FixedHeaderContents {
+  padding: 0.5rem 1rem;
+}

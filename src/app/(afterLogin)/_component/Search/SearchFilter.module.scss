@@ -1,0 +1,28 @@
+@import "../../../styles/var";
+
+.boxWrapper {
+  border: 1px solid map-get($border-color, boxBorder);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.FilterTitle {
+  @extend .boxWrapper;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.filterGroup {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+
+  .filterGroupTitle {
+    font-weight: bold;
+  }
+}
+.label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}

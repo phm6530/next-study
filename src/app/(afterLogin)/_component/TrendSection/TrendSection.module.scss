@@ -1,6 +1,14 @@
-.ListWrapper {
-  background: red;
-}
+@import "../../../styles/var";
+
 .TrendWrapper {
-  padding-top: 3.5rem;
+  background: map-get($bg-color, gray);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.listWrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

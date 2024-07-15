@@ -1,4 +1,5 @@
 "use client";
+import classes from "./CommentForm.module.scss";
 
 import {
   ChangeEvent,
@@ -8,9 +9,8 @@ import {
   useRef,
   useState,
 } from "react";
-import classes from "./postForm.module.scss";
 
-export default function PostForm() {
+export default function CommentForm() {
   const [txtValue, setTxtValue] = useState<string>("");
   const ref = useRef<HTMLInputElement>(null);
   const [pickImg, setPickImg] = useState<string>();
@@ -59,7 +59,7 @@ export default function PostForm() {
           className={classes.postFormTextarea}
           value={txtValue}
           onChange={onChangeHandler}
-          placeholder="무슨일이 있으셨나요?"
+          placeholder="답글 게시하기"
         />
         <input
           type="file"
@@ -76,4 +76,5 @@ export default function PostForm() {
       </form>
     </>
   );
+  return <></>;
 }

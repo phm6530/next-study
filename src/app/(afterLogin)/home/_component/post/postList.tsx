@@ -3,7 +3,6 @@ import classes from "./post.module.scss";
 
 export default function PostList() {
   const arr = [...Array(10).keys()];
-  console.log(arr);
 
   return (
     <div className={classes.postItme_List}>

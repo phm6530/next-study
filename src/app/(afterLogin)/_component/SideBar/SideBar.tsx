@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function SideBar() {
   const links = [
     { path: "/home", pathName: "Home" },
-    { path: "/search", pathName: "탐색하기" },
+    { path: "/explore", pathName: "탐색하기" },
     { path: "/message", pathName: "쪽지" },
     { path: "/profile", pathName: "프로필" },
   ];

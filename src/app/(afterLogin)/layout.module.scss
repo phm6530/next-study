@@ -22,9 +22,10 @@
   background: rgb(240, 116, 14);
 }
 .rightSection {
-  background: red;
-  padding-left: 1rem;
+  padding: 1rem 1rem;
+
   display: flex;
+  gap: 20px;
   flex-direction: column;
   position: relative;
 }

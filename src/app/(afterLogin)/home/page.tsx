@@ -1,13 +1,15 @@
-import Post from "@/app/(afterLogin)/home/_component/post/post";
+import FixedHeader from "@/app/(afterLogin)/_component/FixedHeader";
 import PostList from "@/app/(afterLogin)/home/_component/post/postList";
 import PostForm from "@/app/(afterLogin)/home/_component/postForm/PostForm";
-import Tab from "@/app/(afterLogin)/home/_component/Tab";
 
 export default function HomePage() {
+  console.log("홈 진입");
   return (
     <>
-      <main style={{ position: "relative", height: "100vh" }}>
-        <Tab />
+      <main className="relative">
+        <FixedHeader>
+          <h1>Home Page</h1>
+        </FixedHeader>
         <PostForm />
         <PostList />
       </main>

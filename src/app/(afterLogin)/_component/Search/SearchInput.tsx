@@ -1,21 +1,35 @@
 "use client";
 
-import { FormEvent, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import classes from "./SearchInput.module.scss";
 import { useRouter } from "next/navigation";
 
-export default function SearchInput(): JSX.Element {
+interface Searchprops {
+  q?: string;
+  f?: string;
+  pf?: string;
+}
+
+export default function SearchInput(props: Searchprops) {
   const [focus, setFocus] = useState<boolean>(false);
-  const ref = useRef<HTMLInputElement>(null);
+  const [value, setValue] = useState<string>(props.q || "");
+
+  useEffect(() => {
+    if (!props.q) return;
+    setValue(props.q);
+  }, [props]);
+
   const router = useRouter();
+  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  };
 
   //Search
   const queryStringSearch = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const curInput = ref.current;
 
-    if (curInput && curInput.value.trim() !== "") {
-      router.push(`/search?p=${curInput.value.trim()}`);
+    if (value && value.trim() !== "") {
+      router.push(`/search?q=${value.trim()}`);
     } else {
       router.push(window.location.pathname);
     }
@@ -29,7 +43,8 @@ export default function SearchInput(): JSX.Element {
           name="search"
           onFocus={() => setFocus(true)}
           onBlur={() => setFocus(false)}
-          ref={ref}
+          value={value}
+          onChange={onChangeHandler}
         />
         <button type="submit">검색</button>
       </form>
