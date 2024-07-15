@@ -1,4 +1,4 @@
-import CommentForm from "@/app/(afterLogin)/[username]/status/[id]/_component/CommentForm";
+import CommentForm from "@/app/(afterLogin)/modalDetail/[username]/status/[id]/_component/CommentForm";
 import Post from "@/app/(afterLogin)/home/_component/post/post";
 
 export default function ProfileDetailPage({

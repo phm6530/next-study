@@ -15,7 +15,10 @@ export default function PostImages({
 }: PostimagesProps) {
   const { imageId } = imgData;
   return (
-    <Link href={`/${userId}/status/${postId}/photo/${imageId}`}>
+    <Link
+      href={`/modalDetail/${userId}/status/${postId}/photo/${imageId}`}
+      scroll={false}
+    >
       <Image
         src="/images/cx.jpg"
         alt="CX Image"

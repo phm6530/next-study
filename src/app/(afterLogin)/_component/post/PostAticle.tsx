@@ -17,8 +17,15 @@ export default function PostAticle({
   const router = useRouter();
   const { userId } = user;
 
-  const onClickHandler = () => {
-    router.push(`/${userId}/status/${postId}`);
+  const onClickHandler = (e: React.MouseEvent<HTMLElement>) => {
+    const target = e.target as HTMLElement;
+
+    // 클릭된 요소가 a 태그 또는 그 안의 자식인지 확인
+    if (target.closest("a")) {
+      return;
+    }
+
+    router.push(`/modalDetail/${userId}/status/${postId}`);
   };
 
   return (

@@ -46,7 +46,7 @@ export default function Post() {
       <div className={classes.userImg}>{post.user.profileImg}</div>
 
       <div className={classes.userId}>
-        <Link href={`/${post.user.userId}`}>
+        <Link href={`/modalDetail/${post.user.userId}`}>
           <b>{post.user.nickname}</b>
         </Link>
         <span>{post.user.userId} </span>
