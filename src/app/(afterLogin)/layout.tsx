@@ -2,6 +2,7 @@ import SideBar from "@/app/(afterLogin)/_component/SideBar/SideBar";
 import "@/app/styles/globals.scss";
 import classes from "./layout.module.scss";
 import RightContents from "@/app/(afterLogin)/_component/RightContents";
+import LoadingPage from "@/app/component/Loading/LoadingPage";
 
 export default function AfterLoginLayout({
   children,

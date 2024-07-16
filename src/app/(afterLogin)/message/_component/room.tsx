@@ -24,7 +24,7 @@ export default function Room() {
 
   const { userId, nickname, profileImg, Messages } = user;
   return (
-    <OnclickComponent>
+    <OnclickComponent roomId={Messages[0].roomId}>
       <div className={classes.RoomWrapper}>
         <div className={classes.avatar}>
           {profileImg && <Image src={"/img"} fill alt="" />}

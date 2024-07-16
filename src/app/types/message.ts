@@ -1,4 +1,4 @@
-import { UserProps } from "@/app/types/user";
+import { UserProps, YouProps } from "@/app/types/user";
 
 export type MessageProps = {
   roomId: number;
@@ -8,4 +8,13 @@ export type MessageProps = {
 
 export interface MessagePageProps extends UserProps {
   Messages: MessageProps[];
+}
+
+export interface chatMessage extends MessageProps {
+  target: "me" | "you";
+}
+
+export interface ChatRoomMessageProps {
+  you: YouProps;
+  messages: chatMessage[];
 }

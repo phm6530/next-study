@@ -22,3 +22,38 @@
     }
   }
 }
+
+.messageWrap {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.msgBubble {
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 1rem 1rem 1rem 0;
+}
+
+.meBubble {
+  background: map-get($signature-color, main);
+  color: #fff;
+  border-radius: 1rem 1rem 0rem 1rem;
+}
+
+.youMsg {
+  @extend .messageWrap;
+  align-items: flex-start;
+}
+
+.meMsg {
+  @extend .messageWrap;
+  align-items: flex-end;
+}
+
+.msgSummary {
+  font-size: 0.8rem;
+  align-items: center;
+  padding-top: 0.2rem;
+  opacity: 0.6;
+}
