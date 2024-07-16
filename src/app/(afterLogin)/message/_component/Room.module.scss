@@ -1,0 +1,43 @@
+.RoomWrapper {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+  &:hover {
+    background: map-get($hover-color, gray);
+  }
+
+  .avatar {
+    width: 40px;
+    background: rgb(228, 228, 228);
+    border-radius: 100%;
+    position: relative;
+    grid-row: 1 / -1;
+    margin-right: 1rem;
+    &::after {
+      padding-bottom: 100%;
+      display: block;
+      content: "";
+    }
+  }
+}
+
+.summary {
+  align-items: center;
+
+  .userId {
+    opacity: 0.5;
+    margin: 0px 10px;
+  }
+
+  .fromNow {
+    font-size: 0.8em;
+    opacity: 0.6;
+  }
+}
+
+.messageSummary {
+  font-size: 0.9rem;
+}

@@ -1,7 +1,6 @@
-@import "../../../styles/common/btn.scss";
+@import "btn";
 
 .SideWrapper {
-  background: rgb(46, 46, 46);
   height: 100dvh;
   grid-row: 1/ -1;
   padding: 20px;
@@ -11,6 +10,10 @@
   flex-shrink: 0;
   position: fixed;
   width: 300px;
+  border-style: solid;
+  border-width: 0 1px;
+  border-color: map-get($border-color, boxBorder);
+
   ul {
     display: flex;
     flex-direction: column;
@@ -35,6 +38,7 @@
 
 .btn {
   @extend .btn-type-submit;
+
   width: 100%;
   display: flex;
   justify-content: space-between;

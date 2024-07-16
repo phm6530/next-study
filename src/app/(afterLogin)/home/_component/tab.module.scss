@@ -1,5 +1,3 @@
-@import "../../../styles/var";
-
 .tab {
   width: 100%;
   display: grid;
@@ -10,9 +8,6 @@
     padding: 10px 0px;
     border-bottom: 1px solid map-get($border-color, boxBorder);
     cursor: pointer;
-    // &:hover {
-    //   background: darken(red, 20%);
-    // }
   }
 }
 

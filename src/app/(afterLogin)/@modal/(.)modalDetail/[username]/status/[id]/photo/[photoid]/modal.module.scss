@@ -22,4 +22,14 @@
   border-radius: 1rem;
   max-height: 90dvh;
   height: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+.modalHeader {
+  grid-column: 1 / -1;
+}
+
+.scrollWrapper {
+  overflow: auto;
 }

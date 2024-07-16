@@ -1,5 +1,3 @@
-@use "../../../../styles/var" as *;
-
 .postItme_List {
   display: flex;
   flex-direction: column;
@@ -14,7 +12,7 @@
   border-bottom: 1px solid map-get($border-color, boxBorder);
 
   &:hover {
-    background: red;
+    background: rgba(0, 0, 0, 0.05);
     cursor: pointer;
   }
 }

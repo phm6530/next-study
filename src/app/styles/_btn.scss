@@ -1,5 +1,3 @@
-@import "../var";
-
 @mixin hover($background, $type) {
   background: darken(map-get($background, $type), 10%);
 }

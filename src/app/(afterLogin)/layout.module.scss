@@ -5,13 +5,11 @@
 }
 
 .mainGrid {
-  background: red;
   max-width: 1500px;
   width: calc(100% - 20px);
 }
 
 .rightWrapper {
-  background: rgb(170, 78, 50);
   display: grid;
   grid-template-columns: minmax(600px, 2fr) minmax(300px, 1fr);
   height: 100dvh;
@@ -19,7 +17,8 @@
 }
 
 .contentsArea {
-  background: rgb(240, 116, 14);
+  background: transparent;
+  border-right: 1px solid map-get($border-color, boxBorder);
 }
 .rightSection {
   padding: 1rem 1rem;
