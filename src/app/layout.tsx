@@ -1,18 +1,19 @@
-import { MSWComponent } from "@/app/_component/MSWcomponent";
+"use client";
+
+import Framer from "@/app/_component/animation/Framer";
 import { ReactNode } from "react";
 
-export const metadata = {
-  title: "create - next - app",
-  description: "설명",
-};
+// export const metadata = {
+//   title: "create - next - app",
+//   description: "설명",
+// };
 
 export default function Rootlayout({ children }: { children: ReactNode }) {
   return (
     <>
       <html>
         <body>
-          <MSWComponent />
-          {children}
+          <Framer>{children}</Framer>
         </body>
       </html>
     </>
